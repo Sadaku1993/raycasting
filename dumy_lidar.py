@@ -165,8 +165,6 @@ for i in range(5):
     
     axL.plot(ox, oy, "ob")
     axL.set_title('world')
-    # axL.set_xlabel('t')
-    # axL.set_ylabel('x')
     axL.set_xlim(-grid_size/2*xyreso, grid_size/2*xyreso)
     axL.set_ylim(-grid_size/2*xyreso, grid_size/2*xyreso)
     axL.set_aspect('equal', adjustable='box')
@@ -175,10 +173,8 @@ for i in range(5):
     
     axR.plot(ox, oy, "ob")
     for x, y in zip(raycast_transform.T[0], raycast_transform.T[1]):
-        axR.plot([0.0, x], [0.0, y], 'b-')
+        axR.plot([0.0, x], [0.0, y], 'c-')
     axR.set_title('raycast')
-    # axR.set_xlabel('t')
-    # axR.set_ylabel('x')
     axR.set_xlim(-grid_size/2*xyreso, grid_size/2*xyreso)
     axR.set_ylim(-grid_size/2*xyreso, grid_size/2*xyreso)
     axR.set_aspect('equal', adjustable='box')
@@ -187,8 +183,6 @@ for i in range(5):
 
     axLD.plot(rotation_obstacle.T[0], rotation_obstacle.T[1], "ob")
     axLD.set_title('transform')
-    # aDxL.set_xlabel('t')
-    # aDxL.set_ylabel('x')
     axLD.set_xlim(-grid_size/2*xyreso, grid_size/2*xyreso)
     axLD.set_ylim(-grid_size/2*xyreso, grid_size/2*xyreso)
     axLD.set_aspect('equal', adjustable='box')
@@ -200,9 +194,7 @@ for i in range(5):
     for x, y in zip(raycast_x, raycast_y):
         axRD.plot([0.0, x], [0.0, y], 'b-')
     axRD.plot(rotation_obstacle.T[0], rotation_obstacle.T[1], "ob")
-    axRD.set_title('raycast')
-    # axR.set_xlabel('t')
-    # axR.set_ylabel('x')
+    axRD.set_title('raycast robot frame')
     axRD.set_xlim(-grid_size/2*xyreso, grid_size/2*xyreso)
     axRD.set_ylim(-grid_size/2*xyreso, grid_size/2*xyreso)
     axRD.set_aspect('equal', adjustable='box')
