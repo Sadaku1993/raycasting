@@ -8,3 +8,4 @@
 ## How to Run
 $ python dumy_lidar.py
 
+![alt](image.png)
