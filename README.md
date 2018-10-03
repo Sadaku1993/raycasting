@@ -8,7 +8,7 @@ Acquire pseudo laser data for autonomous robot simulator.
 
 ## Parameter
 
-### set resulution
+### set resolution
 
 ```python:dumy_lidar.py
 xyreso = 0.50 # x-y grid resolution 
