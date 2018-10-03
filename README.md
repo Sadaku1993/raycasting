@@ -9,7 +9,7 @@ Acquire pseudo laser data for autonomous robot simulator.
 ## Parameter
 
 ### set resulution
-xyreso = 0.50 # x-y grid resolution
+xyreso = 0.50 # x-y grid resolution \
 yawreso = math.radians(10) # yaw angle resolution [rad]
 
 ### set lidar param
